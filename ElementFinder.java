@@ -25,7 +25,14 @@ public class ElementFinder {
 	
 	public void FirstDose(String fullname)
 	{
-
+		try
+		{
+			Thread.sleep(2000);
+		} catch (InterruptedException e)
+		{
+		
+		}
+		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		fDose = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Schedule First Dose']")));
 		fDose.click();

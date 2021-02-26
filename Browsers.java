@@ -35,5 +35,8 @@ public class Browsers {
 		
 		return driver;
 	}
-
+		public static void quitBrowser(WebDriver driver) 
+		{
+			driver.quit();
+		}
 }
